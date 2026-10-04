@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: none;
+}
+
+html,
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #111;
+  font-family: sans-serif;
+}
+
+#game {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#hud {
+  position: fixed;
+  top: 14px;
+  left: 14px;
+  padding: 10px 14px;
+  color: white;
+  background: rgba(0, 0, 0, 0.55);
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  border-radius: 10px;
+  font-size: 14px;
+  line-height: 1.6;
+  pointer-events: none;
+}
+
+#hud .name {
+  font-weight: 700;
+}
+
+#joystick {
+  position: fixed;
+  left: 25px;
+  bottom: 25px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.35);
+  border: 3px solid rgba(255, 255, 255, 0.25);
+}
+
+#stick {
+  position: absolute;
+  width: 52px;
+  height: 52px;
+  left: 34px;
+  top: 34px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.75);
+}
+
+#interact {
+  position: fixed;
+  right: 25px;
+  bottom: 38px;
+  width: 95px;
+  height: 95px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(120, 80, 40, 0.9);
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  display: none;
+}
+
+#message {
+  position: fixed;
+  left: 50%;
+  bottom: 155px;
+  transform: translateX(-50%);
+  max-width: 80%;
+  padding: 10px 16px;
+  color: white;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 8px;
+  font-size: 14px;
+  display: none;
+  pointer-events: none;
+}
